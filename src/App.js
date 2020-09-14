@@ -3,20 +3,14 @@ import './App.css';
 
 var notes = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'Bb', 'B'];
 
-const MAJOR_SCALE = [0, 2, 2, 1, 2, 2, 2, 1];
-const MINOR_SCALE = [0, 2, 1, 2, 2, 1, 2, 1];
-const BLUES_SCALE = [0, 3, 2, 1, 1, 3, 2];
-const JAZZ_SCALE = [0, 3, 2, 1, 1, 3, 2];
-const PENTATONIC_MINOR_SCALE = [0, 3, 2, 2, 3, 2];
-const PENTATONIC_MAJOR_SCALE = [0, 2, 2, 3, 2, 3];
-
 var scales = [
-    { id: "major", name: "Major Scale", pattern: MAJOR_SCALE },
-    { id: "minor", name: "Minor Scale", pattern: MINOR_SCALE },
-    { id: "pentatonic_major", name: "Pentatonic Major Scale", pattern: PENTATONIC_MAJOR_SCALE },
-    { id: "pentatonic_minor", name: "Pentatonic Minor Scale", pattern: PENTATONIC_MINOR_SCALE },
-    { id: "blues", name: "Blues Scale", pattern: BLUES_SCALE },
-    { id: "jazz", name: "Jazz Scale", pattern: JAZZ_SCALE },
+    { id: "major", name: "Major Scale", pattern: [0, 2, 2, 1, 2, 2, 2, 1] },
+    { id: "natural_minor", name: "Natural Minor Scale", pattern: [0, 2, 1, 2, 2, 1, 2, 2] },
+    { id: "harmonic_minor", name: "Harmonic Minor Scale", pattern: [0, 2, 1, 2, 2, 1, 3, 1] },
+    { id: "melodic_minor", name: "Melodic Minor Scale", pattern: [0, 2, 1, 2, 2, 2, 2, 1]},
+    { id: "pentatonic_major", name: "Pentatonic Major Scale", pattern: [0, 2, 2, 3, 2, 3] },
+    { id: "pentatonic_minor", name: "Pentatonic Minor Scale", pattern: [0, 3, 2, 2, 3, 2] },
+    { id: "blues", name: "Blues Scale", pattern: [0, 3, 2, 1, 1, 3, 2] }
 ];
 
 class KeyMaster extends Component {
