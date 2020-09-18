@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MIDISounds from 'midi-sounds-react';
 import './App.css';
 
 var notes = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'Bb', 'B'];
